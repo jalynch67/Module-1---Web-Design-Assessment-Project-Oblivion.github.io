@@ -23,3 +23,40 @@ footer {
 footer strong {
     letter-spacing: 1px;
 }
+
+.hero-slide {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.hero-slide-1 {
+    background-image: url('#');
+}
+
+.hero-slide-2 {
+    background-image: url('#');
+}
+
+.hero-slide-3 {
+    background-image: url('#');
+}
+
+.hero-slide-4 {
+    background-image: url('#');
+}

@@ -11,11 +11,24 @@
 
     <title>Project Oblivion</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">Project Oblivion</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto">
@@ -33,38 +46,93 @@
               </li>
             </ul>
           </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </nav>
     </header>
 
-    <main class="container my-5"></main>
+    <main>
+      <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active hero-slide hero-slide-1">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>Welcome to Project Oblivion</h1>
+              <p>Here you will find information about Elder Scrolls IV: Oblivion.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item hero-slide hero-slide-2">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>Gameplay</h1>
+              <p>Explore the incredible gameplay features of Elder Scrolls IV: Oblivion.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item hero-slide hero-slide-3">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>Story</h1>
+              <p>Immerse yourself in the rich lore and narrative of Elder Scrolls IV: Oblivion.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item hero-slide hero-slide-4">
+            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+              <h1>World & Features</h1>
+              <p>Discover the vast open world and unique features of Elder Scrolls IV: Oblivion.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </section>
+    </main>
 
     <footer class="bg-dark text-white py-3 mt-auto border-top border-secondary">
       <div class="container">
         <div class="row align-items-center text-center text-md-start">
+
           <div class="col-md-4 mb-2 mb-md-0">
             <span>&copy; 2026 Project Oblivion</span>
           </div>
+
           <div class="col-md-4 text-md-center mb-2 mb-md-0">
             <strong>Project Oblivion</strong>
           </div>
+
           <div class="col-md-4 text-md-end">
             <small>
               Disclaimer: This is a fan-made site for educational purposes.
             </small>
           </div>
+
         </div>
       </div>
     </footer>
