@@ -60,3 +60,13 @@ footer strong {
 .hero-slide-4 {
     background-image: url('#');
 }
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    padding: 1rem;
+}
