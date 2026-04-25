@@ -203,7 +203,3 @@ footer strong {
 .playstyle-list li:last-child {
     border-bottom: none;
 }
-
-.bg-light {
-    background-color: var(--rich-mahogany);
-}
