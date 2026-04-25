@@ -227,3 +227,9 @@ footer strong {
     border-bottom: none;
 }
 
+.playstyle-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(236, 131, 23, 0.25);
+    border-color: var(--tiger-orange);
+}
+
