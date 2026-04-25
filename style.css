@@ -1,5 +1,19 @@
+:root {
+    --coffee-bean: #140300;
+    --coffee-bean-2: #1C0401;
+    --rich-mahogany: #300602;
+    --spicy-orange: #D24C0F;
+    --tiger-orange: #EC8317;
+}
+
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--coffee-bean);
+    color: '#fff';
+}
+
+.navbar {
+    background-color: var(--coffee-bean-2) !important;
 }
 
 html, body {
