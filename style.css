@@ -210,7 +210,7 @@ footer strong {
     height: 100%;
 }
 
-.story-cards .btn {
+.btn-card-bottom-left {
     margin-top: auto;
     align-self: flex-start;
 }
