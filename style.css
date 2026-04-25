@@ -196,4 +196,34 @@ footer strong {
     color: rgba(255, 255, 255, 0.85);
 }
 
+.playstyle-section {
+    background-color: var(--coffee-bean);
+    color: white;
+}
+
+.playstyle-card {
+    background-color: var(--coffee-bean-2);
+    border: 1px solid var(--rich-mahogany);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playstyle-title {
+    color: var(--tiger-orange);
+    margin-bottom: 0.75rem;
+}
+
+.playstyle-text {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.playstyle-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rich-mahogany);
+    color: white;
+    font-size: 0.95rem;
+}
+
+.playstyle-list li:last-child {
+    border-bottom: none;
+}
 
