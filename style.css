@@ -214,3 +214,13 @@ footer strong {
     margin-top: auto;
     align-self: flex-start;
 }
+
+.side-quests .theme-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.side-quests .theme-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(236, 131, 23, 0.3);
+    border-color: var(--tiger-orange);
+}
