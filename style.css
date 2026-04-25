@@ -250,3 +250,13 @@ footer strong {
     color: rgba(255, 255, 255, 0.85);
     border-top: 1px solid var(--rich-mahogany);
 }
+
+.modal-content {
+    background-color: var(--coffee-bean-2);
+    color: white;
+    border: 1px solid var(--rich-mahogany);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--rich-mahogany);
+}
