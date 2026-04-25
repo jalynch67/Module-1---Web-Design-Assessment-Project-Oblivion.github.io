@@ -145,3 +145,7 @@ footer strong {
     background-color: var(--tiger-orange);
     border-color: var(--tiger-orange);
 }
+
+.gameplay-section {
+    background-color: var(--rich-mahogany) !important;
+}
