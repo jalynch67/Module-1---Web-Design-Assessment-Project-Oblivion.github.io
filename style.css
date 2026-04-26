@@ -227,6 +227,11 @@ footer strong {
     align-self: flex-start;
 }
 
+.btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
+
 .side-quests .theme-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
