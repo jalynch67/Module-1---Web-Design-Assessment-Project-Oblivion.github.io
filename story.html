@@ -12,14 +12,15 @@
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Project Oblivion</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="mainNav">
@@ -31,7 +32,7 @@
                             <a class="nav-link" href="gameplay.html">Gameplay</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="story.html">Story</a>
+                            <a class="nav-link active" href="story.html" aria-current="page">Story</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="world&features.html">World & Features</a>
@@ -42,16 +43,18 @@
         </nav>
     </header>
 
-    <main>
-        <section class="page-hero text-center">
+    <main id="main-content">
+
+        <section class="page-hero text-center" aria-label="Story introduction">
             <div class="container">
                 <h1 class="display-6">The Story of Oblivion</h1>
                 <p class="lead">Step into a world on the brink of destruction.</p>
             </div>
         </section>
 
-        <section class="content-section">
+        <section class="content-section" aria-label="Main story accordion">
             <div class="container">
+
                 <div class="text-center mb-4">
                     <h2>Main Story Journey</h2>
                     <p>Follow the rise of a hero and the fall of an empire.</p>
@@ -61,12 +64,12 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#story1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#story1" aria-expanded="false" aria-controls="story1">
                                 🔒 The Prison Escape
                             </button>
                         </h2>
-                        <div id="story1" class="accordion-collapse collapse">
+                        <div id="story1" class="accordion-collapse collapse" data-bs-parent="#storyAccordion">
                             <div class="accordion-body">
                                 You begin as a prisoner, unexpectedly visited by Emperor Uriel Septim. Moments later,
                                 assassins strike,
@@ -77,12 +80,12 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#story2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#story2" aria-expanded="false" aria-controls="story2">
                                 🔥 The Oblivion Crisis Begins
                             </button>
                         </h2>
-                        <div id="story2" class="accordion-collapse collapse">
+                        <div id="story2" class="accordion-collapse collapse" data-bs-parent="#storyAccordion">
                             <div class="accordion-body">
                                 With the Emperor dead, gates to Oblivion begin opening across the land, unleashing
                                 Daedric forces upon Tamriel.
@@ -92,12 +95,12 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#story3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#story3" aria-expanded="false" aria-controls="story3">
                                 👑 Finding Martin Septim
                             </button>
                         </h2>
-                        <div id="story3" class="accordion-collapse collapse">
+                        <div id="story3" class="accordion-collapse collapse" data-bs-parent="#storyAccordion">
                             <div class="accordion-body">
                                 You must find the last heir, Martin Septim, and help him reclaim the throne to stop the
                                 invasion.
@@ -107,12 +110,12 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#story4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#story4" aria-expanded="false" aria-controls="story4">
                                 ⚔️ The Final Battle
                             </button>
                         </h2>
-                        <div id="story4" class="accordion-collapse collapse">
+                        <div id="story4" class="accordion-collapse collapse" data-bs-parent="#storyAccordion">
                             <div class="accordion-body">
                                 In a final confrontation, Martin sacrifices himself to banish Mehrunes Dagon and save
                                 Tamriel forever.
@@ -124,14 +127,16 @@
             </div>
         </section>
 
-        <section class="card-section story-cards">
+        <section class="card-section story-cards" aria-label="Key story moments">
             <div class="container">
                 <h2 class="mb-4 text-center">Key Moments</h2>
 
                 <div class="row g-4">
+
                     <div class="col-md-4">
                         <article class="card card-hover h-100">
-                            <img src="images/oblivion-gate.jpg" class="card-img-top" alt="">
+                            <img src="images/oblivion-gate.jpg" class="card-img-top"
+                                alt="Oblivion Gate opening with Daedric energy and fire">
                             <div class="card-body">
                                 <h5 class="card-title">Closing Oblivion Gates</h5>
                                 <p>Enter hellish realms and shut down Daedric invasions.</p>
@@ -145,7 +150,8 @@
 
                     <div class="col-md-4">
                         <article class="card card-hover h-100">
-                            <img src="images/kvatch.jpg" class="card-img-top" alt="">
+                            <img src="images/kvatch.jpg" class="card-img-top"
+                                alt="Battle scene of Kvatch under attack by Daedra">
                             <div class="card-body">
                                 <h5 class="card-title">Battle of Kvatch</h5>
                                 <p>One of the first major battles against Oblivion forces.</p>
@@ -159,7 +165,8 @@
 
                     <div class="col-md-4">
                         <article class="card card-hover h-100">
-                            <img src="images/final-battle.jpg" class="card-img-top" alt="">
+                            <img src="images/final-battle.jpg" class="card-img-top"
+                                alt="Final battle between Martin Septim and Mehrunes Dagon">
                             <div class="card-body">
                                 <h5 class="card-title">Final Sacrifice</h5>
                                 <p>The fate of Tamriel rests on one final act.</p>
@@ -170,11 +177,12 @@
                             </div>
                         </article>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="content-section side-quests">
+        <section class="content-section side-quests" aria-label="Side quests section">
             <div class="container text-center p-4">
                 <h2 class="mb-4">Famous Side Quests</h2>
                 <p class="mb-5">Some of the most memorable adventures beyond the main story.</p>
@@ -191,138 +199,91 @@
                     <div class="col-md-4">
                         <div class="theme-card p-4 h-100">
                             <h4>🗡️ Whodunit?</h4>
-                            <p>A unique quest where you must eliminate targets in a mansion without
-                                being
-                                discovered.</p>
+                            <p>A unique quest where you must eliminate targets in a mansion without being discovered.
+                            </p>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="theme-card p-4 h-100">
                             <h4>🌀 Sheogorath’s Quest</h4>
-                            <p>Help the Daedric Prince of Madness unleash chaos in a small village.
-                            </p>
+                            <p>Help the Daedric Prince of Madness unleash chaos in a small village.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
     </main>
 
-<div class="modal fade" id="gateModal">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content theme-card">
+    <div class="modal fade" id="gateModal" role="dialog" aria-modal="true" aria-labelledby="gateModalTitle">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content theme-card">
 
-            <div class="modal-header">
-                <h5 class="modal-title">Oblivion Gates</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gateModalTitle">Oblivion Gates</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close dialog"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Oblivion Gates are portals that tear open across Tamriel...</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
             </div>
-
-            <div class="modal-body">
-                <p>
-                    Oblivion Gates are portals that tear open across Tamriel following the death of Emperor Uriel
-                    Septim VII.
-                    Each gate leads into a Daedric realm ruled by Mehrunes Dagon, filled with lava fields, hostile
-                    Dremora,
-                    and twisted towers of black stone.
-                </p>
-
-                <p>
-                    Inside each realm, the central objective is the Sigil Tower, where a Sigil Stone powers the gate.
-                    By fighting through Daedra and navigating dangerous terrain, you reach the top and remove the
-                    Sigil Stone,
-                    collapsing the gate and sealing the connection to Oblivion.
-                </p>
-
-                <p>
-                    Every closed gate weakens the Daedric invasion and provides powerful enchanted Sigil Stones that
-                    can be used
-                    to enhance weapons and armor.
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="kvatchModal">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content theme-card">
+    <div class="modal fade" id="kvatchModal" role="dialog" aria-modal="true" aria-labelledby="kvatchModalTitle">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content theme-card">
 
-            <div class="modal-header">
-                <h5 class="modal-title">Battle of Kvatch</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kvatchModalTitle">Battle of Kvatch</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close dialog"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Battle of Kvatch marks the first major Daedric invasion...</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
             </div>
-
-            <div class="modal-body">
-                <p>
-                    The Battle of Kvatch marks the first major Daedric invasion of a city in Cyrodiil.
-                    The city is overrun after an Oblivion Gate opens nearby, allowing Daedra to pour into the streets.
-                </p>
-
-                <p>
-                    When you arrive, Kvatch is already in ruins, with survivors regrouping at the camp led by Savlian Matius.
-                    Your mission becomes critical: enter the burning Oblivion Gate outside the city, rescue survivors trapped inside,
-                    and close the portal from within.
-                </p>
-
-                <p>
-                    Once the gate is closed, you help lead the remaining guards in a counterattack to reclaim Kvatch from the Daedric forces.
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="finalModal">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content theme-card">
+    <div class="modal fade" id="finalModal" role="dialog" aria-modal="true" aria-labelledby="finalModalTitle">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content theme-card">
 
-            <div class="modal-header">
-                <h5 class="modal-title">The Final Sacrifice</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="finalModalTitle">The Final Sacrifice</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close dialog"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Martin Septim sacrifices himself to stop Mehrunes Dagon...</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
             </div>
-
-            <div class="modal-body">
-                <p>
-                    At the end of the crisis, Martin Septim travels to the Imperial City carrying the Amulet of Kings,
-                    the key to restoring the Dragonfires and stopping Mehrunes Dagon’s full manifestation in Nirn.
-                </p>
-
-                <p>
-                    As the final Oblivion Gate opens within the Imperial City, Martin makes the ultimate decision.
-                    He breaks the Amulet of Kings, calling upon the power of Akatosh, the Dragon God of Time.
-                </p>
-
-                <p>
-                    Transformed into a massive divine avatar of Akatosh, Martin battles Mehrunes Dagon directly.
-                    The Daedric Prince is banished back to Oblivion, the Dragonfires are restored, and the invasion is ended—
-                    but Martin’s sacrifice marks the end of the Septim bloodline.
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-
         </div>
     </div>
-</div>
 
-    <footer class="text-white py-3 mt-auto">
+    <footer class="text-white py-3 mt-auto" role="contentinfo">
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-4 mb-2 mb-md-0">
