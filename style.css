@@ -277,25 +277,25 @@ footer strong {
 }
 
 @media (min-width: 1200px) {
-
-    .hero-slide {
-        height: 40vh;
-    }
-
-    .card-body {
-        padding: 2rem;
+    .card {
+        font-size: 1.1rem;
     }
 
     .card-title {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
-    .card-text {
-        font-size: 1.05rem;
+    .card-img-top {
+        height: 220px;
     }
 
-    .py-5 {
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
     }
 }
+
