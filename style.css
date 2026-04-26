@@ -275,3 +275,27 @@ footer strong {
     box-shadow: 0 12px 30px rgba(236, 131, 23, 0.25);
     border-color: var(--tiger-orange);
 }
+
+@media (min-width: 1200px) {
+
+    .hero-slide {
+        height: 40vh;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-text {
+        font-size: 1.05rem;
+    }
+
+    .py-5 {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+}
